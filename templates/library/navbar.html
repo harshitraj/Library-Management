@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<style type="text/css">
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+
+
+
+{% block style %}{% endblock style %}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <img src="static/images/ongc.png" height="50px" width="50px" alt="Logo">
+        <a href="/" class="navbar-brand">LIBRARY MAANGEMENT SYSTEM (ONGC)</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                
+
+            </div>
+
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/adminclick" class="nav-item nav-link">Admin</a>
+                <a href="/librarianclick" class="nav-item nav-link">Librarian</a>
+                <a href="/studentclick" class="nav-item nav-link">Student</a>
+                <a href="/members" class="nav-item nav-link">Members</a>
+                <a href="/about" class="nav-item nav-link">About</a>
+            </div>
+
+
+
+
+        </div>
+    </nav>
+</div>
+
+
+</body>
+</html>

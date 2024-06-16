@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>LMS Django</title>
+    <style media="screen">
+    .jumbotron{
+      margin-bottom: 80px;
+      background: none;
+    }
+    .jumbotron h1{
+      text-align: center;
+      background: none;
+    }
+    .student-logo {
+      text-align: center;
+    }
+    body {
+      background-image: url('https://images.pexels.com/photos/8014599/pexels-photo-8014599.jpeg?auto=compress&cs=tinysrgb&w=2000');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    
+    </style>
+
+  </head>
+  <body>
+      {% include "library/navbar.html" %}
+<br><br>
+      <div class="jumbotron">
+        <div class="student-logo">
+          <img src="static/images/student2.png" alt="Admin Logo">
+        </div>
+        <h1 class="display-4"><b>Hello, Student</b></h1>
+        <p class="lead"><b>Welcome to Online Library Management System.</b></p>
+        <hr class="my-4">
+        <p><b>You can access various features after Login.</b></p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" style="border-radius: 0%;" href="studentsignup" role="button"><b>SignUp</b></a>
+          <a class="btn btn-primary btn-lg" style="border-radius: 0%;" href="studentlogin" role="button"><b>Login</b></a>
+        </p>
+      </div>
+
+
+      {% include "library/footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members List</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Member List</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+  /* Body styles */
+  body {
+    padding-top: 80px;
+      background-color: : #b6bde7 !important;
+      font-family: 'Roboto', sans-serif;
+    background-image: url('https://images.pexels.com/photos/16113292/pexels-photo-16113292/free-photo-of-black-and-white-landscape-with-hills-and-trees.jpeg?auto=compress&cs=tinysrgb&w=2000');
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+  
+  }
+  
+  /* Headline styles */
+  .headline {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Flex container styles */
+  .members-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Member card styles */
+  .member-card {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Circular image styles */
+  .member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+</style>
+
+</head>
+<body>
+    {% include "library/navbar.html" %}
+
+    <h2 class="headline">Our Members & Developers</h2>
+  
+  <div class="members-container">
+    <div class="member-card">
+      <img class="member-image" src="static/images/rakesh_ongc.jpg" alt="Member 1">
+      <h3>Rakesh Kumar Swain</h3>
+      <p>Branch : Computer Science & Engineering</p>
+      <p>National Institute Of Technology Arunachal Pradesh</p>
+    </div>
+    
+    <div class="member-card">
+      <img class="member-image" src="static/images/harshit.jpeg" alt="Member 2">
+      <h3>Harshit Raj</h3>
+      <p>Branch : Computer Science & Engineering</p>
+      <p>National Institute Of Technology Arunachal Pradesh</p>
+    </div>
+
+    <div class="members-container">
+    <div class="member-card">
+      <img class="member-image" src="static/images/akash.jpeg" alt="Member 1">
+      <h3>Akash Kumar Chowdhary</h3>
+      <p>Branch : Computer Science & Engineering</p>
+      <p>National Institute Of Technology Arunachal Pradesh</p>
+    </div>
+
+    
+    <!-- Add more member cards as needed -->
+  </div>
+    {% comment %} {% include "library/footer.html" %}  {% endcomment %}
+</body>
+</html>

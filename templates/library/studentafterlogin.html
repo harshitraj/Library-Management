@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<style media="screen">
+.jumbotron{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: none;
+}
+.jumbotron h1{
+  text-align: center;
+  background: none;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/8014599/pexels-photo-8014599.jpeg?auto=compress&cs=tinysrgb&w=2000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+</style>
+  </head>
+  <body>
+    {% include "library/navbarstudent.html" %}
+    <br>
+    <br>
+    <center><h3 style=" margin-bottom: 0px; background: none;" class='alert alert-success'><b>Welcome to Library Management System<b></h3></center>
+    <div class="jumbotron"   style="margin-bottom: 60px; background: none;">
+    <h1 class="display-4"><b>Hello {{user.first_name}} !</b></h1>
+    <p class="lead"><b>As you are Student, you can see how many book you have taken from library with fine and many more ...!</b>
+    </p>
+    <hr class="my-4">
+    <p><b>Option Available For You</b></p>
+    <div class="options" style="text-align:center; background: none;">
+      <a href="viewissuedbookbystudent" class="btn btn-primary btn-lg active" style="border-radius: 0%; " role="button" aria-pressed="true">View issued book to you</a><br><br>
+        </div>
+
+    </div>
+
+
+    {% include "library/footer.html" %}
+  </body>
+</html>
