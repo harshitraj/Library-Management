@@ -139,3 +139,6 @@ EMAIL_HOST_PASSWORD = 'rakesh777'
 # ...
 
 DEFAULT_FROM_EMAIL = 'swainrakesh86288@gmail.com'
+
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
